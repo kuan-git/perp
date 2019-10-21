@@ -7,8 +7,8 @@
     <title>per曆</title>
     <style>
         body {
-            text-alige:center;
-            font-family:Microsoft JhengHei,fantasy;
+            text-align:center;
+            font-family:"Microsoft JhengHei",fantasy;
             /* font-family:JhengHei; */
             font-style:oblique;
             background-image:url(./autumn-11.jpg) ;
@@ -94,22 +94,22 @@
     if(($month) > 1){
 ?>
        
-       <a href="per.php?m=<?=($month-1);?> & y=<?=($year);?>">上一月</a>
+       <a href="?m=<?=($month-1);?>&y=<?=($year);?>">上一月</a>
 <?php
     }else{
-        echo "<a href='per.php?m=12> & y=".($year-1)."'>上一月</a>";
+        echo "<a href='?m=12>&y=".($year-1)."'>上一月</a>";
         echo "</button>";
     }
 ?>
-        <button style="font-family:Microsoft JhengHei;color:#333300">
+        <button style="font-family:'Microsoft JhengHei';color:#333300">
 <?php
     if($month < 12){
 ?>
-        <a href="per.php?m=<?=($month+1);?> & y=<?=($year);?>">下一月</a>
+        <a href="?m=<?=($month+1);?>&y=<?=($year);?>">下一月</a>
 <?php
     }else{
 ?>
-        <a href="per.php?m=<?=1;?> & y=<?=($year+1);?>;">下一月</a>    
+        <a href="?m=<?=1;?>&y=<?=($year+1);?>;">下一月</a>    
 <?php
     }
 ?>
